@@ -8,6 +8,10 @@
 import SwiftUI
 
 struct PlantInfo: View {
+    var name: String
+    var description: String
+
+    
     var body: some View {
         
         HStack{
@@ -19,14 +23,15 @@ struct PlantInfo: View {
         
         
             VStack(alignment: .leading){
-                Text("Jan")
+                Text(name)
                     .font(.title3)
                     .fontWeight(.bold)
                     .foregroundColor(Color("SecondaryColor"))
                   
-                Text("Doe maar mij maar een glaasje van 125ml")
+                Text(description)
                     .font(.subheadline)
             }
+            .frame(minWidth: 200, idealWidth: .infinity, maxWidth: .infinity, minHeight: 0, idealHeight: 100, maxHeight: .infinity, alignment: .leading)
             .padding(.horizontal,5)
             
             Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/, label: {
@@ -40,7 +45,6 @@ struct PlantInfo: View {
         .padding()
         .background(Color(.white))
         .modifier(CardModifier())
-        .padding()
     }
 }
 
@@ -54,6 +58,6 @@ struct CardModifier: ViewModifier {
 
 struct PlantInfo_Previews: PreviewProvider {
     static var previews: some View {
-        PlantInfo()
+        PlantInfo(name: "Jan", description: "Ik wil een glaasje van 125ml water.")
     }
 }
