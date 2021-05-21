@@ -9,7 +9,21 @@ import SwiftUI
 
 struct HomeView: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        NavigationView {
+            ScrollView {
+                
+                ZStack (alignment:.leading){
+                    Text("\"")
+                    Text("ah ha ha ha, stayin' alive")
+                }
+                
+                PlantInfo()
+                
+            }
+            .navigationBarTitle("It's Piet's day")
+            
+            
+        }
     }
 }
 
