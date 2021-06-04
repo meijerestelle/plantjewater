@@ -7,8 +7,12 @@
 
 import SwiftUI
 
+//class PlantsSearch: ObservableObject {
+//    @Published var =
+//}
+
 struct PlantView: View {
-        let array = ["Aloë", "Cactus", "Crassula"]
+        let array = plantData
         @State private var searchText = ""
         @State private var showCancelButton: Bool = false
 
@@ -53,8 +57,8 @@ struct PlantView: View {
 
                     List {
                         // Filtered list of names
-                        ForEach(array.filter{$0.hasPrefix(searchText) || searchText == ""}, id:\.self) {
-                            searchText in Text(searchText)
+                        ForEach(array.filter{$0.name.hasPrefix(searchText) || searchText == ""}, id:\.self) {
+                            plantje in Text(plantje.name)
                         }
                     }
                     .navigationBarTitle(Text("Add a child"))

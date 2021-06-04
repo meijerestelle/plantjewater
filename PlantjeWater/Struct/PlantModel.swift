@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct Plantje {
+struct Plantje: Hashable {
     var image : String
     var name : String
     var water : Int
