@@ -10,5 +10,5 @@ import SwiftUI
 struct Plantje: Hashable {
     var image : String
     var name : String
-    var water : Int
+    var water : String
 }

@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import Foundation
 
 //class PlantsSearch: ObservableObject {
 //    @Published var =

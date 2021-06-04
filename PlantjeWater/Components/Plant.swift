@@ -10,7 +10,6 @@ import SwiftUI
 struct Plant: View {
     var name: String
     var description: String
-
     
     var body: some View {
         
