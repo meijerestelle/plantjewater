@@ -24,15 +24,21 @@ struct AddPlantView: View {
     
     var body: some View {
         
-        VStack (alignment: .leading){
+        VStack (alignment: .leading) {
+            
+            Text("Plant of species:")
+                .font(.title3)
+                .fontWeight(.bold)
+                .foregroundColor(Color("SecondaryColor"))
+            
+            Text("\(species.name)")
+                .padding(.bottom, 50)
+            
             Text("Your plant's name")
                 .font(.title3)
                 .fontWeight(.bold)
                 .foregroundColor(Color("SecondaryColor"))
-          
-            
-        VStack{
-            Text("\(species.name)")
+
             TextField(
                 "name",
                 text: $name)
@@ -71,22 +77,27 @@ struct AddPlantView: View {
                             Text("Select birthday")
                         }
 
-           Spacer()
+            Spacer()
             
-            Button(
-                action: { print("hoi")},
-                label: {
-                Text("Save")
-            })
-          
-            
-           
-            
-
-            
-        
+            HStack {
+                Spacer()
+                
+                Button(
+                    action: { print("hoi")},
+                    label: {
+                    Text("Save")
+                })
+            }
+            .padding()
         }
         .padding()
+        .background(
+            Image("blob")
+                .resizable()
+                .scaledToFill()
+                .edgesIgnoringSafeArea(.all)
+                .padding(.top, 200.0)
+        )
     }
 }
 
