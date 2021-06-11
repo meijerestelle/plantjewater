@@ -20,7 +20,6 @@
 		855B036B2657AA7B002730AB /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 855B036A2657AA7B002730AB /* Persistence.swift */; };
 		855B036E2657AA7B002730AB /* PlantjeWater.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 855B036C2657AA7B002730AB /* PlantjeWater.xcdatamodeld */; };
 		855B03772657B59F002730AB /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 855B03762657B59F002730AB /* HomeView.swift */; };
-		855B03792657B5AE002730AB /* PlanningView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 855B03782657B5AE002730AB /* PlanningView.swift */; };
 		855B037B2657B5CE002730AB /* PlantView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 855B037A2657B5CE002730AB /* PlantView.swift */; };
 		855B037D2657B5DE002730AB /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 855B037C2657B5DE002730AB /* ProfileView.swift */; };
 		855B037F2657B5F1002730AB /* PlantDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 855B037E2657B5F1002730AB /* PlantDetailView.swift */; };
@@ -46,7 +45,6 @@
 		855B036D2657AA7B002730AB /* PlantjeWater.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = PlantjeWater.xcdatamodel; sourceTree = "<group>"; };
 		855B036F2657AA7B002730AB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		855B03762657B59F002730AB /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
-		855B03782657B5AE002730AB /* PlanningView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanningView.swift; sourceTree = "<group>"; };
 		855B037A2657B5CE002730AB /* PlantView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlantView.swift; sourceTree = "<group>"; };
 		855B037C2657B5DE002730AB /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 		855B037E2657B5F1002730AB /* PlantDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlantDetailView.swift; sourceTree = "<group>"; };
@@ -143,7 +141,6 @@
 			isa = PBXGroup;
 			children = (
 				855B03762657B59F002730AB /* HomeView.swift */,
-				855B03782657B5AE002730AB /* PlanningView.swift */,
 				855B037A2657B5CE002730AB /* PlantView.swift */,
 				855B037C2657B5DE002730AB /* ProfileView.swift */,
 				855B037E2657B5F1002730AB /* PlantDetailView.swift */,
@@ -235,7 +232,6 @@
 				855B03812657B602002730AB /* SettingsView.swift in Sources */,
 				68A55A3A266A4962009D5098 /* PlantModel.swift in Sources */,
 				855B036E2657AA7B002730AB /* PlantjeWater.xcdatamodeld in Sources */,
-				855B03792657B5AE002730AB /* PlanningView.swift in Sources */,
 				85CB792226735A64003F637D /* SpeciesData.swift in Sources */,
 				855B03772657B59F002730AB /* HomeView.swift in Sources */,
 				855B03622657AA78002730AB /* PlantjeWaterApp.swift in Sources */,

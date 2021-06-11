@@ -15,12 +15,6 @@ struct ContentView: View {
                     Image(systemName: "house")
                     Text("Home")
                 }
-                    
-            PlanningView()
-                .tabItem {
-                    Image(systemName: "calendar")
-                    Text("Planning")
-                }
             
             PlantView()
                 .tabItem {

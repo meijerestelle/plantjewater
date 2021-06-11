@@ -25,6 +25,8 @@ struct ListRow: View {
             
             Spacer()
             
+            NavigationLink(destination: AddPlantView())
+            
             Button(action: {
                 print("jippie")
             }, label: {
