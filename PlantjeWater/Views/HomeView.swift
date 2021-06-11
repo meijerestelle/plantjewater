@@ -48,9 +48,14 @@ struct HomeView: View {
                 }
                 .padding()
             }
+            .background(
+                Image("blob")
+                    .resizable()
+                    .scaledToFill()
+                    .edgesIgnoringSafeArea(.all)
+                    .padding(.top, 200.0)
+            )
             .navigationBarTitle("It's Piet's day")
-            
-            
         }
     }
 }

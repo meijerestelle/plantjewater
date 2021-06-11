@@ -10,18 +10,39 @@ import SwiftUI
 struct ProfileView: View {
     var body: some View {
         NavigationView {
-            ScrollView {
+            VStack {
+                VStack {
 
-                ProfileCard()
-                    .padding(.top)
-                
-                HStack {
-                    ProfilePlant()
+                    ProfileCard()
+                        .padding(.top)
                     
-                    ProfilePlant()
+                    HStack {
+                        ProfilePlant()
+                        
+                        ProfilePlant()
+                    }
+                    
+                    Spacer()
                 }
+                .navigationBarTitle("The fam")
+                .navigationBarItems(trailing:
+                                        Button(action: {
+                                          print("settings")
+                                        }, label: {
+                                            Image(systemName: "gearshape")
+                                                .imageScale(.medium)
+                                                .padding(10)
+                                                .foregroundColor(.white)
+                                                .background(Color("AccentColor"))
+                                                .clipShape(RoundedRectangle(cornerSize: CGSize(width: 10, height: 10)))
+                                    }))
             }
-            .navigationBarTitle("The fam")
+            .background(
+                Image("blob")
+                    .resizable()
+                    .scaledToFill()
+                    .edgesIgnoringSafeArea(.all)
+                    .padding(.top, 200.0))
         }
     }
 }

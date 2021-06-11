@@ -9,7 +9,16 @@ import SwiftUI
 
 struct PlanningView: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack {
+            Text("")
+        }
+        .background(
+            Image("blob")
+                .resizable()
+                .scaledToFill()
+                .edgesIgnoringSafeArea(.all)
+                .padding(.top, 200.0)
+        )
     }
 }
 

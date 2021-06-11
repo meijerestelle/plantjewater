@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		6882696C2657B6B900214DB4 /* PlantInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6882696B2657B6B900214DB4 /* PlantInfo.swift */; };
 		68A55A33266A291C009D5098 /* Plant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68A55A32266A291C009D5098 /* Plant.swift */; };
-		68A55A37266A47CE009D5098 /* PlantRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68A55A36266A47CE009D5098 /* PlantRow.swift */; };
 		68A55A3A266A4962009D5098 /* PlantModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68A55A39266A4962009D5098 /* PlantModel.swift */; };
 		68A55A3D266A4B3D009D5098 /* PlantData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68A55A3C266A4B3D009D5098 /* PlantData.swift */; };
 		853210F4266A2A4800674969 /* ProfileCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 853210F3266A2A4800674969 /* ProfileCard.swift */; };
@@ -26,12 +25,14 @@
 		855B037D2657B5DE002730AB /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 855B037C2657B5DE002730AB /* ProfileView.swift */; };
 		855B037F2657B5F1002730AB /* PlantDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 855B037E2657B5F1002730AB /* PlantDetailView.swift */; };
 		855B03812657B602002730AB /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 855B03802657B602002730AB /* SettingsView.swift */; };
+		85CB792026735991003F637D /* ListRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85CB791F26735991003F637D /* ListRow.swift */; };
+		85CB792226735A64003F637D /* SpeciesData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85CB792126735A64003F637D /* SpeciesData.swift */; };
+		85CB792426735AB0003F637D /* SpeciesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85CB792326735AB0003F637D /* SpeciesModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		6882696B2657B6B900214DB4 /* PlantInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlantInfo.swift; sourceTree = "<group>"; };
 		68A55A32266A291C009D5098 /* Plant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Plant.swift; sourceTree = "<group>"; };
-		68A55A36266A47CE009D5098 /* PlantRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlantRow.swift; sourceTree = "<group>"; };
 		68A55A39266A4962009D5098 /* PlantModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlantModel.swift; sourceTree = "<group>"; };
 		68A55A3C266A4B3D009D5098 /* PlantData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlantData.swift; sourceTree = "<group>"; };
 		853210F3266A2A4800674969 /* ProfileCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileCard.swift; sourceTree = "<group>"; };
@@ -50,6 +51,9 @@
 		855B037C2657B5DE002730AB /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 		855B037E2657B5F1002730AB /* PlantDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlantDetailView.swift; sourceTree = "<group>"; };
 		855B03802657B602002730AB /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		85CB791F26735991003F637D /* ListRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListRow.swift; sourceTree = "<group>"; };
+		85CB792126735A64003F637D /* SpeciesData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeciesData.swift; sourceTree = "<group>"; };
+		85CB792326735AB0003F637D /* SpeciesModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeciesModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +74,7 @@
 				68A55A32266A291C009D5098 /* Plant.swift */,
 				853210F3266A2A4800674969 /* ProfileCard.swift */,
 				853210F5266A2DDD00674969 /* ProfilePlant.swift */,
+				85CB791F26735991003F637D /* ListRow.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -78,6 +83,7 @@
 			isa = PBXGroup;
 			children = (
 				68A55A39266A4962009D5098 /* PlantModel.swift */,
+				85CB792326735AB0003F637D /* SpeciesModel.swift */,
 			);
 			path = Struct;
 			sourceTree = "<group>";
@@ -86,6 +92,7 @@
 			isa = PBXGroup;
 			children = (
 				68A55A3C266A4B3D009D5098 /* PlantData.swift */,
+				85CB792126735A64003F637D /* SpeciesData.swift */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -109,10 +116,10 @@
 		855B03602657AA78002730AB /* PlantjeWater */ = {
 			isa = PBXGroup;
 			children = (
-				68A55A38266A493F009D5098 /* Struct */,
 				6882696A2657B68F00214DB4 /* Components */,
 				855B03752657B58A002730AB /* Views */,
 				855B03612657AA78002730AB /* PlantjeWaterApp.swift */,
+				68A55A38266A493F009D5098 /* Struct */,
 				68A55A3B266A4B09009D5098 /* Data */,
 				855B03632657AA78002730AB /* ContentView.swift */,
 				855B03652657AA7B002730AB /* Assets.xcassets */,
@@ -138,7 +145,6 @@
 				855B03762657B59F002730AB /* HomeView.swift */,
 				855B03782657B5AE002730AB /* PlanningView.swift */,
 				855B037A2657B5CE002730AB /* PlantView.swift */,
-				68A55A36266A47CE009D5098 /* PlantRow.swift */,
 				855B037C2657B5DE002730AB /* ProfileView.swift */,
 				855B037E2657B5F1002730AB /* PlantDetailView.swift */,
 				855B03802657B602002730AB /* SettingsView.swift */,
@@ -217,18 +223,20 @@
 			files = (
 				68A55A3D266A4B3D009D5098 /* PlantData.swift in Sources */,
 				855B037D2657B5DE002730AB /* ProfileView.swift in Sources */,
-				68A55A37266A47CE009D5098 /* PlantRow.swift in Sources */,
 				68A55A33266A291C009D5098 /* Plant.swift in Sources */,
 				855B036B2657AA7B002730AB /* Persistence.swift in Sources */,
 				6882696C2657B6B900214DB4 /* PlantInfo.swift in Sources */,
+				85CB792426735AB0003F637D /* SpeciesModel.swift in Sources */,
 				855B03642657AA78002730AB /* ContentView.swift in Sources */,
 				855B037B2657B5CE002730AB /* PlantView.swift in Sources */,
+				85CB792026735991003F637D /* ListRow.swift in Sources */,
 				853210F6266A2DDD00674969 /* ProfilePlant.swift in Sources */,
 				855B037F2657B5F1002730AB /* PlantDetailView.swift in Sources */,
 				855B03812657B602002730AB /* SettingsView.swift in Sources */,
 				68A55A3A266A4962009D5098 /* PlantModel.swift in Sources */,
 				855B036E2657AA7B002730AB /* PlantjeWater.xcdatamodeld in Sources */,
 				855B03792657B5AE002730AB /* PlanningView.swift in Sources */,
+				85CB792226735A64003F637D /* SpeciesData.swift in Sources */,
 				855B03772657B59F002730AB /* HomeView.swift in Sources */,
 				855B03622657AA78002730AB /* PlantjeWaterApp.swift in Sources */,
 				853210F4266A2A4800674969 /* ProfileCard.swift in Sources */,
