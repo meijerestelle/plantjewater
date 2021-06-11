@@ -11,10 +11,12 @@ struct AddPlantView: View {
     @State private var name: String = ""
     @State private var isEditing = false
     
+    var species: Species
+    
     var body: some View {
         
         VStack{
-            
+            Text("\(species.name)")
             TextField(
                 "name",
                 text: $name)
@@ -32,6 +34,6 @@ struct AddPlantView: View {
 
 struct AddPlantView_Previews: PreviewProvider {
     static var previews: some View {
-        AddPlantView()
+        AddPlantView(species: speciesData[0])
     }
 }

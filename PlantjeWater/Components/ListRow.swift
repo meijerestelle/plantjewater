@@ -25,24 +25,19 @@ struct ListRow: View {
             
             Spacer()
             
-            NavigationLink(destination: AddPlantView())
             
-            Button(action: {
-                print("jippie")
-            }, label: {
-                Image(systemName: "plus")
-                    .padding(5)
-                    .overlay(
-                        RoundedRectangle(cornerRadius: 5)         .stroke(Color.white, lineWidth: 2)
-                    )
-                    .imageScale(.small)
-                    .padding(15)
-                    .foregroundColor(.white)
-                    .background(Color("AccentColor"))
-                    .clipShape(
-                        RoundedRectangle(
-                            cornerSize: CGSize(width: 15, height: 15)))
-            })
+            Image(systemName: "plus")
+                .padding(5)
+                .overlay(
+                    RoundedRectangle(cornerRadius: 5)         .stroke(Color.white, lineWidth: 2)
+                )
+                .imageScale(.small)
+                .padding(15)
+                .foregroundColor(.white)
+                .background(Color("AccentColor"))
+                .clipShape(
+                    RoundedRectangle(
+                        cornerSize: CGSize(width: 15, height: 15)))
         }
         .padding()
         .background(Color.white)

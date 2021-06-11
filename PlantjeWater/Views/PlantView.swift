@@ -76,7 +76,12 @@ struct PlantView: View {
 
                             // Filtered list of names
                             ForEach(array.filter{$0.name.hasPrefix(searchText) || searchText == ""}, id:\.self) { plantje in
-                                ListRow(species: plantje)
+                                NavigationLink(
+                                    destination: AddPlantView(species: plantje),
+                                    label: {
+                                        ListRow(species: plantje)
+                                    })
+                                
                             }
                         .navigationBarTitle(Text("Add a child"))
                         .resignKeyboardOnDragGesture()
