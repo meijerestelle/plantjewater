@@ -10,10 +10,24 @@ import SwiftUI
 struct AddPlantView: View {
     @State private var name: String = ""
     @State private var isEditing = false
+    @State private var water: String = ""
+    
+    let dateFormatter: DateFormatter = {
+           let formatter = DateFormatter()
+           formatter.dateStyle = .long
+           return formatter
+       }()
+
+       @State private var birthDate = Date()
     
     var body: some View {
         
-        VStack{
+        VStack (alignment: .leading){
+            Text("Your plant's name")
+                .font(.title3)
+                .fontWeight(.bold)
+                .foregroundColor(Color("SecondaryColor"))
+          
             
             TextField(
                 "name",
@@ -22,11 +36,53 @@ struct AddPlantView: View {
                 self.isEditing = isEditing
             }
             .textFieldStyle(RoundedBorderTextFieldStyle())
+            .background(Color.white)
+            .padding(.bottom, 50)
+            
+            
+            
+            Text("How often does your child needs water?")
+                .font(.title3)
+                .fontWeight(.bold)
+                .foregroundColor(Color("SecondaryColor"))
+          
+            
+            TextField(
+                "water",
+                text: $water)
+            { isEditing in
+                self.isEditing = isEditing
+            }
+            .textFieldStyle(RoundedBorderTextFieldStyle())
+            .background(Color.white)
+            .padding(.bottom, 50)
+            
+            
+            Text("What is your plant's birthday?")
+                .font(.title3)
+                .fontWeight(.bold)
+                .foregroundColor(Color("SecondaryColor"))
+            
+            DatePicker(selection: $birthDate, in: ...Date(), displayedComponents: .date) {
+                            Text("Select birthday")
+                        }
+
+           Spacer()
+            
+            Button(
+                action: { print("hoi")},
+                label: {
+                Text("Save")
+            })
+          
+            
+           
+            
 
             
         
         }
-        
+        .padding()
     }
 }
 
